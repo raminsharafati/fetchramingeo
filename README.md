@@ -16,10 +16,7 @@ This project I created includes a Python utility for fetching geolocation data u
 - Python version 3 and above
 - `requests` library (for making HTTP requests)
 
-You can install the necessary Python library using pip:
-
-```bash
-pip install requests
+You can install the necessary Python library using pip: pip install requests
 
 ## Usage
 
