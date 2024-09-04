@@ -5,7 +5,7 @@ def run_utility(*args):
     result = subprocess.run(command, capture_output=True, text=True)
     return result.stdout
 
-def test_geoloc_util():
+def test_geo():
     # I'm testing valid inputs
     output = run_utility('--locations', 'Madison, WI', '12345', 'Chicago, IL', '10001')
     assert "Place: Madison" in output
@@ -37,5 +37,5 @@ def test_geoloc_util():
     assert "Longitude:" in output
 
 if __name__ == '__main__':
-    test_geoloc_util()
+    test_geo()
     print("All tests passed!")
